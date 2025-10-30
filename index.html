@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Examination - USIU Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+<nav class="primary-nav" aria-label="Primary"> 
+<img src="assets\blaqline.svg" alt="Blaqline Logo" class="logo"></a>
+<a href="index.html" aria-current="page">Home</a>
+<a href="about.html">About</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h1>USIU Clubs Marketplace Stall Applications</h1>
+<form id="stallapplicationsform" novalidate>
+
+    <fieldset>
+        <legend class="head">Club Informatton</legend>
+        
+        <label for="clubname">Club Name</label>
+        <input type="text" id="clubName" name="club[name]" required aria-describedby="clubNameHelp">
+        <small id="clubNameHelp">Please enter the official name of your club.<small>
+
+        <label for="clubCategory">Club Category *</label>
+        <select id="clubCategory" name="club[category]" required>
+            <option value="">Select a category</option>
+            <option value="academic">Academic</option>
+            <option value="cultural">Cultural</option>
+            <option value="sports">Sports</option>
+            <option value="social">Social</option>
+            </select>
+
+            <label for="expectednumber">Expected Number *</label>
+            <input type="number" id="expectedFootfall" name="club[expectedFootfall]" min="1" required aria-describedby="expectedFootfallHelp">
+            <small id="expectedFootfallHelp">Estimate the number of visitors you expect at your stall.</small>
+
+            <label for="priorParticipation">Prior Participation *</label>
+            <select id="priorParticipation" name="club[priorParticipation]" required>
+                <option value="">What's your status</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select> 
+    </fieldset>
+
+    <fieldset>
+        <legend class="head">Stall Details</legend>
+
+        <label for="riskLevel">Stall Type *</label>
+        <select id="riskLevel" name="stall[riskLevel]" required>
+            <option value="">Select risk level</option>
+            <option value="low">Low (e.g, crafts, info)</option>
+            <option value="medium">Medium (e.g, food, electronics)</option>
+            <option value="high">High (e.g, equipment, mechanical)</option>
+        </select>
+
+        <label for="needsElectricity">
+            <input type="checkbox" id="needsElectricity" name="stall[needsElectricity]" />Needs Electricity</label>
+
+            <label for="wattageEstimate" class="wattage-label">If Electricity is needed, Wattage estimate (Watts) *</label>
+            <input type="number" id="wattageEstimate" name="stall[wattageEstimate]" min="1" disabled required />
+    </fieldset>
+
+    <fieldset>
+        <legend class="head">Impact Justification</legend>
+        <label for="impactJustification">Justfication: *</label>
+        <textarea id="impactJustification" name="stall[impactJustification]" maxlength="200" required aria-describedby="impactJustificationHelp"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend class="head">Consent and Rules</legend>
+        <label for="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            I agree to abide by the USIU Clubs Marketplace 
+            <a href="#" target="_blank" rel="noopener">rules & privacy</a>
+            <label>    
+        </fieldset>
+        <div id="validationFeedback" aria-live="polite"></div>
+        <button type="submit">Submit Application</button>
+</form>
+</main>
+</body>
+<footer>
+    <p>&copy; 2025 Mid-term Examination. All rights reserved.</p>
+</footer>
+</html>

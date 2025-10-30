@@ -1,0 +1,157 @@
+:root {
+  --brand: #C2A88D;
+  --accent: #D4A373;
+  --text: #5A4D41;
+  --bg: #FAF6F0;
+  --border: #D9CAB3;
+  --highlight: #F4EAD5;
+
+  --max-width: 70ch;
+  --radius: 10px;
+  --space: 1rem;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--bg);;
+  color: var(--bg);
+}
+
+/* Typography Scale */
+h1 {
+  color: var(--text);  
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: var(--space-2);
+  top: var(--space-2);
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--brand);
+  color: var(--bg);
+  z-index: 1000;
+}
+
+.primary-nav {
+  list-style: none;
+  align-content: end;
+  padding: 0;
+  display: flex;
+  gap: 1px;
+  background-color: var(--brand);
+  margin-left: -8px;
+  margin-right: -16px;
+}
+
+.primary-nav a {
+  color: var(--bg);
+  text-decoration: none;
+  padding: var(--space-2);
+  display: block;
+  border-radius: var(--radius);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+  background-color: var(--accent);
+}
+
+.logo {
+  width: 75px;
+  height: auto;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  padding: var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--brand);
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  padding: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 var(--space-1);
+}
+
+.head {
+  color: var(--bg);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: var(--space-2);
+  font-weight: 650;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button {
+  background-color: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+input[disabled] {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#validationFeedback {
+  margin-top: var(--space-2);
+  font-size: 1rem;
+  color: red;
+  min-height: 1.2em;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #333333;
+}
