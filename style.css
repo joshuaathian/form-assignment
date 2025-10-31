@@ -1,10 +1,10 @@
 :root {
-  --brand: #F2C94C;     /* Mustard Yellow */
-  --accent: #F2994A;    /* Warm Amber */
-  --text: #0A1D37;      /* Navy Blue */
-  --bg: #F9F9F9;        /* Light Neutral Background */
-  --border: #D1D1D1;    /* Soft Gray Border */
-  --highlight: #FFF3C4; /* Pale Mustard */
+  --brand: #F2C94C;     
+  --accent: #F2994A;    
+  --text: #0A1D37;      
+  --bg: #F9F9F9;        
+  --border: #D1D1D1;    
+  --highlight: #FFF3C4; 
 
   --max-width: 70ch;
   --radius: 10px;
@@ -164,3 +164,4 @@ small {
   font-size: 0.8rem;
   color: #333333;
 }
+
