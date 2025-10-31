@@ -1,6 +1,6 @@
 :root {
-  --brand: #191970;      /* Navy Blue - Primary */
-  --accent: #FFCE1B;     /* Mustard Yellow - Accent */
+  --brand: #FFCE1B;      /* Navy Blue - Primary */
+  --accent: #191970;     /* Mustard Yellow - Accent */
   --text: #F9F9F9;       /* Light text on dark background */
   --bg: #F9F9F9;         /* Page background */
   --border: #D1D1D1;     /* Neutral border */
@@ -164,3 +164,4 @@ small {
   font-size: 0.8rem;
   color: #333333;
 }
+
